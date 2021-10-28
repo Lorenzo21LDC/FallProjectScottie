@@ -17,7 +17,50 @@ page that contains all the code you need for a new page.-->
   <!--Whole page container div-->
   <div class="container">
 
+    <form class="needs-validation" action="result.html" method="get">
+      <div class="form-group">
+        <label for="teams">How many teams had Micheal Jordan played for?</label>
+        <input class="form-control" id="teams" name="teams" placeholder="number of teams" required>
+      </div>
+      <div class="form-group">
+        <label for="pickanum">How many teams had Scottie Pippen played for? </label>
+        <select class="form-control" id="pickanum" name="pickanum" required>
+          <option selected></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+      <p>Which player is the leader of the most points scored in Chicao Bulls franchise history?</p>
 
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Red" id="redcheck" name="colors">
+        <label class="form-check-label" for="red">
+          Scottie Pippen 
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Green" id="greencheck" name="colors">
+        <label class="form-check-label" for="green">
+          Derrick Rose 
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="Purple" id="purplecheck" name="colors">
+        <label class="form-check-label" for="purple">
+          Micheal Jordan
+        </label>
+      </div>
+  
+      <div class="form-group">
+        <label for="writestuff">How many rings did the Chicao Bulls win with Jordan and Pippen and who is your favorite player out of the two legends?</label>
+        <textarea class="form-control" id="writestuff" name="writestuff" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+  
 
   </div>
   <!--Bootstrap and other JS scripts-->
